@@ -145,12 +145,12 @@ def __create_job_listings_for_insurance():
 
 if __name__ == '__main__':
     base_url = "https://www.glassdoor.com/"
-    #__create_job_listings_table(True)
-    #__create_job_listings_for_finance()
-    #__create_job_listings_for_IT()
-    #__create_job_listings_for_telecommunication()
-    #__create_job_listings_for_health_care()
-    #__create_job_listings_for_insurance()
+    __create_job_listings_table(True)
+    __create_job_listings_for_finance()
+    __create_job_listings_for_IT()
+    __create_job_listings_for_telecommunication()
+    __create_job_listings_for_health_care()
+    __create_job_listings_for_insurance()
     sales_force = [
     "https://www.glassdoor.com/Job/california-google-jobs-SRCH_IL.0,10_IS2280_KE11,17.htm",
     "https://www.glassdoor.com/Job/california-google-jobs-SRCH_IL.0,10_IS2280_KE11,17_IP2.htm",

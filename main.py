@@ -1,6 +1,7 @@
 from libs.JobListingsDao import JobListingsDao
 from OnlineProcessor import CosineSimiCalculator as cal
 import queue as Q
+import numpy;
 from flask import Flask, request, g, redirect, url_for, render_template
 # import things
 from flask_table import Table, Col
@@ -17,7 +18,7 @@ class Result(object):
         self.salary = salary
         return
 
-    def __cmp__(self, other):
+    def __lt__(self, other):
         return -1 * cmp(self.priority, other.priority)
 
     def __repr__(self):
@@ -72,6 +73,9 @@ def __get_top_10_job(sector, location, experience):
     for i in range(0, 10):
         result.append(q.get())
     return result
+
+def cmp(a, b):
+    return bool(a) ^ bool(b) 
 
 if __name__ == '__main__':
     print ("Starting application")

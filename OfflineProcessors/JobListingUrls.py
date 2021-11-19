@@ -8,6 +8,35 @@ hoodies =[
     # "https://www.amazon.com/s?k=hoodies&page=7&qid=1637183536&ref=sr_pg_7"
 ]
 
+shoes =[
+    "https://www.amazon.com/s?k=shoes&page=2&qid=1637350272&ref=sr_pg_2",
+    "https://www.amazon.com/s?k=shoes&page=3&qid=1637350277&ref=sr_pg_3",
+    "https://www.amazon.com/s?k=shoes&page=4&qid=1637350304&ref=sr_pg_4",
+    "https://www.amazon.com/s?k=shoes&page=5&qid=1637350316&ref=sr_pg_5",
+    "https://www.amazon.com/s?k=shoes&page=6&qid=1637350324&ref=sr_pg_6",
+    "https://www.amazon.com/s?k=shoes&page=7&qid=1637350334&ref=sr_pg_7"
+]
+
+watches =[
+    "https://www.amazon.com/s?k=watches&page=2&qid=1637350357&ref=sr_pg_2",
+    "https://www.amazon.com/s?k=watches&page=3&qid=1637350376&ref=sr_pg_3",
+    "https://www.amazon.com/s?k=watches&page=4&qid=1637350393&ref=sr_pg_4",
+    "https://www.amazon.com/s?k=watches&page=5&qid=1637350404&ref=sr_pg_5",
+    "https://www.amazon.com/s?k=watches&page=6&qid=1637350414&ref=sr_pg_6",
+    "https://www.amazon.com/s?k=watches&page=7&qid=1637350424&ref=sr_pg_7"
+]
+
+jeans =[
+    "https://www.amazon.com/s?k=jeans&page=2&qid=1637350789&ref=sr_pg_2",
+    "https://www.amazon.com/s?k=jeans&page=3&qid=1637350797&ref=sr_pg_3",
+    "https://www.amazon.com/s?k=jeans&page=4&qid=1637350819&ref=sr_pg_4",
+    "https://www.amazon.com/s?k=jeans&page=5&qid=1637350829&ref=sr_pg_5",
+    "https://www.amazon.com/s?k=jeans&page=6&qid=1637350839&ref=sr_pg_6",
+    "https://www.amazon.com/s?k=jeans&page=7&qid=1637350851&ref=sr_pg_7"
+]
+
+
+
 telecommunication = [
     "https://www.glassdoor.com/Job/california-telecommunication-jobs-SRCH_IL.0,10_IS2280_KE11,28_IP2.htm",
     "https://www.glassdoor.com/Job/california-telecommunication-jobs-SRCH_IL.0,10_IS2280_KE11,28_IP3.htm",

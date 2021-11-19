@@ -3,11 +3,11 @@ from urllib.request import urlopen, Request  # Website connections
 import re  # Regular expressions
 from time import sleep  # To prevent overwhelming the server between connections
 import sqlite3
-from JobListingUrls import hoodies
-from JobListingUrls import information_technology
-from JobListingUrls import telecommunication
-from JobListingUrls import health_care
-from JobListingUrls import insurance
+from ProductListingUrls import hoodies
+from ProductListingUrls import information_technology
+from ProductListingUrls import telecommunication
+from ProductListingUrls import health_care
+from ProductListingUrls import insurance
 
 import sys
 import os

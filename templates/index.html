@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Job Recommender</title>
+  <title>Product Recommender</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,8 +51,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="#">Job Recommender</a>
-        <p><a href='https://www.glassdoor.com/index.htm'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' />r</a></p>
+        <a class="navbar-brand" href="#">Product Recommender</a>
+        <p><a href='https://www.amazon.com'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' />r</a></p>
     </div>
   </div>
 </nav>
@@ -76,8 +76,9 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="sector" class="control-label">   Preferred Job Categories:</label>
+                <label for="sector" class="control-label">   Preferred Product Categories:</label>
                 <select class="form-control col-sm-4" id="sector" name="sector">
+                    <option>Hoodies</option>
                     <option>Finance</option>
                     <option>Information Technology</option>
                     <option>Telecommunications</option>
@@ -86,8 +87,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="experience">Professional Experience summary</label>
-                <textarea name="experience" type="experience" class="form-control" rows="5" id="experience">software developer</textarea>
+                <label for="freesearch">Keywords to search</label>
+                <textarea name="freesearch" type="freesearch" class="form-control" rows="5" id="freesearch">men's hoodies</textarea>
                 <!--<div class="col-sm-12">
                     <textarea class="form-control" rows="5" id="experience"></textarea>
                 </div> -->
@@ -103,14 +104,22 @@
         <div class="table-responsive">
             <h4>{{ header }} </h4>
             <table class="table table-bordered">
-            <thead><tr><th>company_name</th><th>job_title</th><th>salary</th><th>location</th><th>url</th></tr></thead>
+            <thead>
+              <tr>
+                <!-- <th>company_name</th> -->
+                <th>product_title</th>
+                <th>price</th>
+                <th>rating</th>
+                <th>url</th
+              ></tr>
+            </thead>
             <tbody>
                 {% for entry in entries %}
                 <tr>
-                    <td align="left">{{ entry.company_name }}</td>
-                    <td align="left">{{ entry.job_title }}</td>
-                    <td align="left">{{ entry.salary }}</td>
-                    <td align="left">{{ entry.location }}</td>
+                    <!-- <td align="left">{{ entry.company_name }}</td> -->
+                    <td align="left">{{ entry.product_title }}</td>
+                    <td align="left">{{ entry.price }}</td>
+                    <td align="left">{{ entry.rating }}</td>
                     <td align="left"><a href="{{ entry.url }}" style="display:block;">details</a></td></tr>
                 {% endfor %}
             </tbody>
